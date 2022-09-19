@@ -37,8 +37,6 @@ dd {
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  max-width: 100vw;
-  min-height: 100vh; 
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   text-decoration: non;
@@ -56,8 +54,8 @@ li[class] {
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto;  
-  text-decoration: none; 
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Упрощаем работу с изображениями */
@@ -67,7 +65,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
@@ -78,3 +76,34 @@ textarea,
 select {
   font: inherit;
 }
+
+h1 {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+header {
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-pic {
+  height: 24px;
+  width: 87.99999237060547px;
+}
+
+.city-pic {
+  height: 32px;
+  width: 32px;
+  border-radius: 40px;
+
+}
+
+.input {}
